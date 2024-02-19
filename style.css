@@ -1,0 +1,66 @@
+h1{                                 /*  selector */
+    color: red;                   /*  Declaration box */
+    font-size: 50px;                 /*  Color is property */
+    text-align: center;
+    border-width: thin;
+}
+
+/* Id css using # */
+
+#breakpara {                     /*  selector is Id used #*/
+    color: blue;
+    font-size: 20px;
+    text-align: left;
+}
+
+ /*  selector is class use . */
+
+p.classSelector {
+    color: green;
+    font-size: 25px;
+    text-align: left;
+    margin: 5px;
+}
+
+
+/* Descendant selectors are useful if you need to select HTML elements that are contained within another selector. */
+/* ex in anchor.html */
+
+#blog h1 {
+    color: red;
+    font-size: 25px;
+    text-align: left;
+}
+
+#blog div h1 {
+    color: yellow;
+    font-size: 15px;
+    text-align: left;
+}
+
+/* Child selectors are more specific than descendant selectors. They only select elements that are immediate descendants (children) of a selector (the parent). */
+#blog > h1:hover {
+    color: orange;
+    font-size: 25px;
+    text-align: left;
+}
+
+/* :hover Pseudo-Class */
+/* The simplest example of this is changing the color of a hyperlink when it is hovered over. To do this, you add the :hover pseudo-class to the end of the selector. In the following example, adding :hover  to the a element will change the color of the hyperlink to orange when it is hovered over. */
+
+a:hover {
+    color: rgb(0, 247, 255);
+}
+
+.parent {
+    border: 4px solid red;
+    margin: 10px;
+  }
+
+.child {
+    width: 50%;
+    padding: 20px;
+    border: 4px solid green;
+    margin: auto;
+
+  }
